@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="Air conditioning" />
+
+    <CheckBox
+        android:id="@+id/CheckBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:text="Heating" />
+
+    <CheckBox
+        android:id="@+id/CheckBox02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox01"
+        android:layout_below="@+id/CheckBox01"
+        android:text="Gas" />
+
+    <CheckBox
+        android:id="@+id/CheckBox03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox02"
+        android:layout_below="@+id/CheckBox02"
+        android:text="Parking" />
+
+    <CheckBox
+        android:id="@+id/CheckBox04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox03"
+        android:layout_below="@+id/CheckBox03"
+        android:text="Internet" />
+
+    <CheckBox
+        android:id="@+id/CheckBox05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox04"
+        android:layout_below="@+id/CheckBox04"
+        android:text="Pool" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Additional Amenities"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/aBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/finishButtons"
+        android:layout_alignBottom="@+id/finishButtons"
+        android:layout_toLeftOf="@+id/finishButtons"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/finishButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/checkBox1"
+        android:layout_marginBottom="48dp"
+        android:text="Post!" />
+
+</RelativeLayout>
