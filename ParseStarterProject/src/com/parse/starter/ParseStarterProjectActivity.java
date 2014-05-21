@@ -36,6 +36,7 @@ public class ParseStarterProjectActivity extends Activity {
 	
 	public void apartmentNumberConfirmClicked(View view)
 	{
+		
 		apartmentNumber = (EditText) findViewById(R.id.apartmentNumber);
 		utilities = (CheckBox) findViewById(R.id.utilities);
 
@@ -56,15 +57,11 @@ public class ParseStarterProjectActivity extends Activity {
 		listing.put("apartment", aptNum);
 		listing.put("utilities", util);
 		listing.saveInBackground();
+
 		
-		/*
-		Context context = getApplicationContext();
-		CharSequence text = "End";
-		int duration = Toast.LENGTH_LONG;
-		Toast toast = Toast.makeText(context, text, duration);
-		toast.show();
 		
-		*/
+
+
 
 		/*
 		ParseQuery<ParseObject> query = ParseQuery.getQuery("Listing");
@@ -81,31 +78,5 @@ public class ParseStarterProjectActivity extends Activity {
 		});
 		*/
 	}
-	/*
-	public void utilitiesClicked()
-	{
-		utilities = (CheckBox) findViewById(R.id.apartmentNumber);
-		if(NUM == null)
-		{
-			Context context = getApplicationContext();
-			CharSequence text = "Enter a Apartment Number first.";
-			int duration = Toast.LENGTH_LONG;
-			Toast toast = Toast.makeText(context, text, duration);
-			toast.show();
-		}
-		else
-		{
-			listing.put("utilities", utilities.isChecked());
-			listing.saveInBackground();
-		}
-		
-		
-	}
 	
-	public void confirmOptionsClicked()
-	{
-		utilitiesClicked();
-	}
-	
-	*/
 }

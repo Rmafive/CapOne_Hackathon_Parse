@@ -14,13 +14,24 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".ParseStarterProjectActivity"
+            android:name=".HomeScreenActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+     
+        <activity
+            android:name=".ParseStarterProjectActivity">
+        
+        </activity>
+                <activity
+            android:name=".SignUpActivity">
+        </activity>
+                <activity
+            android:name=".LogInActivity">
         </activity>
     </application>
 
