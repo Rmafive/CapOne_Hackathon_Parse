@@ -2,6 +2,7 @@ package com.parse.starter;
 
 import android.app.Application;
 import android.net.ParseException;
+import android.widget.*;
 
 import com.parse.GetCallback;
 import com.parse.Parse;
@@ -14,6 +15,11 @@ import com.parse.ParseUser;
 
 public class ParseApplication extends Application {
 
+	private EditText apartmentNumber;
+	private Button apartmentNumberConfirm;
+	
+	
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();
@@ -22,22 +28,7 @@ public class ParseApplication extends Application {
 		Parse.initialize(this, "e3iYHXy6fGSvD2zLSfFiRW9svLO00zxbSxbTxASO",
 				"wEThjMVaviI7XQC6Mpc6Rkl9ljkndPU9MxXBKsxu");
 
-		ParseObject listing = new ParseObject("Listing");
-		listing.put("appartment", "room 999");
-		listing.saveInBackground();
-
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("Listing");
-		query.getInBackground("2jNULR1bR4", new GetCallback<ParseObject>() {
-			public void done(ParseObject object, ParseException e) {
-				if (e == null) {
-					System.out.println(object.getString("appartment"));
-				} else {
-					// something went wrong
-				}
-			}
-		});
-		
-
+	
 		ParseUser.enableAutomaticUser();
 		ParseACL defaultACL = new ParseACL();
 
@@ -47,5 +38,6 @@ public class ParseApplication extends Application {
 
 		ParseACL.setDefaultACL(defaultACL, true);
 	}
+
 
 }
