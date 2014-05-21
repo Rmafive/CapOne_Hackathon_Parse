@@ -23,7 +23,7 @@ public class ParseApplication extends Application {
 				"wEThjMVaviI7XQC6Mpc6Rkl9ljkndPU9MxXBKsxu");
 
 		ParseObject listing = new ParseObject("Listing");
-		listing.put("appartment", "room 111");
+		listing.put("appartment", "room 999");
 		listing.saveInBackground();
 
 		ParseQuery<ParseObject> query = ParseQuery.getQuery("Listing");
