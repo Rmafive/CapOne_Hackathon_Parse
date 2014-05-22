@@ -1,3 +1,2 @@
-ParseStarterProject/gen
-ParseStarterProject/bin/classes*
-ParseStarterProject/bin
+bin
+gen
