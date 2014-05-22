@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bar"
     android:orientation="vertical"
     tools:context="com.parse.starter"
     tools:ignore="MergeRootFrame" >
@@ -78,8 +79,35 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/finishButtons"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="27dp"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="21dp"
         android:text="Next" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/nextbutton"
+        android:background="@android:color/transparent"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/nextbutton"
+        android:background="@android:color/transparent"
+        android:text="Profile" />
 
 </RelativeLayout>
