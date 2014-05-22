@@ -77,13 +77,14 @@ public class MyCameraActivity extends Activity {
         listing.put("price", numericalPrice);
         listing.saveInBackground();
 
+        /*
         int bytes = photo.getWidth()*photo.getHeight()*4;
         ByteBuffer buffer = ByteBuffer.allocate(bytes);
         photo.copyPixelsToBuffer(buffer);
         byte[] array = buffer.array();
         ParseFile file = new ParseFile("image.jpeg", array);
         file.saveInBackground();
-        listing.put("Image", file);
+        listing.put("Image", file);*/
 
     }
 
