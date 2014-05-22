@@ -33,6 +33,12 @@
                 <activity
             android:name=".LogInActivity">
         </activity>
+                <activity
+            android:name=".NewsFeedActivity">
+        </activity>
+                <activity
+            android:name=".ProfileActivity">
+        </activity>
     </application>
 
 </manifest>

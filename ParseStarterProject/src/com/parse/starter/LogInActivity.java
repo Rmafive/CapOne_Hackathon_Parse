@@ -7,6 +7,7 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -49,7 +50,8 @@ public class LogInActivity extends Activity{
 			@Override
 			public void done(ParseUser user, ParseException e) {
 			    if (user != null) {
-			    	Log.d("LOG IN", "USER IS LOGGED IN");
+			    	Intent i = new Intent(LogInActivity.this, NewsFeedActivity.class);
+					startActivity(i);
 			      } 
 			    else {
 			    	Log.d("LOG IN", "LOG IN FAILED");
