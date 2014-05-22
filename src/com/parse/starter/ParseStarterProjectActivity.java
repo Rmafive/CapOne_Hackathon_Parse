@@ -41,6 +41,7 @@ public class ParseStarterProjectActivity extends Activity {
 
 	public void apartmentNumberConfirmClicked(View view)
 	{
+		
 		apartmentNumber = (EditText) findViewById(R.id.apartmentNumber);
 		utilities = (CheckBox) findViewById(R.id.utilities);
 
