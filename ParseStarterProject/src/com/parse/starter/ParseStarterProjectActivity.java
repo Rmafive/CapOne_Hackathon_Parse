@@ -1,5 +1,6 @@
 package com.parse.starter;
 
+import android.widget.Button;
 import android.content.Intent;
 import java.lang.*;
 
@@ -24,6 +25,7 @@ public class ParseStarterProjectActivity extends Activity {
 	private CheckBox utilities;
 	private String NUM = null;
 	private ParseObject listing;
+	private Button nextPage;
 
 	/** Called when the activity is first created. */
 	public void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,8 @@ public class ParseStarterProjectActivity extends Activity {
 
 		ParseAnalytics.trackAppOpened(getIntent());
 		listing = new ParseObject("Listing");
+		nextPage = (Button)findViewById(R.id.nextPage);
+		nextPageClicked();
 	}
 
 
@@ -109,4 +113,14 @@ public class ParseStarterProjectActivity extends Activity {
 	}
 
 	*/
+
+	public void nextPageClicked()
+	{
+	    Context context = getApplicationContext();
+	    CharSequence text = "receieved";
+	    Toast toast = Toast.makeText(context, text, Toast.LENGTH_LONG);
+	    toast.show();
+	    Intent i = new Intent(ParseStarterProjectActivity.this, MyCameraActivity.class);
+	    startActivity(i);
+	}
 }
